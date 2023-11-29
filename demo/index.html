@@ -272,9 +272,8 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="frame">
+          <div class="rounded overflow-hidden">
             <img src="./assets/images/about.jpg" class="img-fluid" alt="">
-            <span class="bg-light border-0"></span>
           </div>
         </div>
       </div>
@@ -287,23 +286,23 @@
     <div class="container foreground">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-6">
-          <h2 class="mb-1">Comandă acum</h2>
+          <h2 class="mb-1">Ai o intrebare?</h2>
           <p class="lead">Lasă-ne datele de contact, iar noi revenim cu un apel</p>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-6">
-          <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xaygzrll"
+          <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/myyqqbge"
             method="post">
             <fieldset id="fs-frm-inputs">
               <div class="mb-2">
                 <label for="full-name" class="form-label">Numele si prenumele</label>
-                <input type="text" name="name" class="form-control" id="full-name" placeholder="Ex: Alexandrina Jardan"
-                  required="">
+                <input type="text" name="Numele" class="form-control" id="full-name"
+                  placeholder="Ex: Alexandrina Jardan" required="">
               </div>
               <div class="mb-5">
                 <label for="phone-number" class="form-label">Numar de telefon</label>
-                <input type="tel" name="name" class="form-control" id="full-name" placeholder="Ex: 060 000 000"
+                <input type="tel" name="Telefon" class="form-control" id="full-name" placeholder="Ex: 060000000"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{3}" max-length="9" required>
               </div>
             </fieldset>
@@ -328,12 +327,15 @@
         <div class="col-lg-8">
           <div class="carousel carousel-align text-center">
             <div
-              data-carousel='{"gutter": 48, "loop": false, "nav": false, "controls": false, "responsive": {"0": {"items": 2}, "768": {"items": 2}, "1200": {"items": 2}}}'>
+              data-carousel='{"gutter": 48, "loop": false, "nav": false, "controls": false, "responsive": {"0": {"items": 2}, "768": {"items": 3}, "1200": {"items": 3}}}'>
               <div>
-                <img src="./assets/images/logo/partener-1.png" alt="Logo" class="logo">
+                <img src="./assets/images/logo/partener-1.png" alt="Cartego" class="logo">
               </div>
               <div>
-                <img src="./assets/images/logo/partener-2.png" alt="Logo" class="logo">
+                <img src="./assets/images/logo/partener-2.png" alt="Carturesti" class="logo">
+              </div>
+              <div>
+                <img src="./assets/images/logo/partener-3.png" alt="Librarius" class="logo">
               </div>
             </div>
           </div>
@@ -384,17 +386,18 @@
             <fieldset id="fs-frm-inputs">
               <div class="mb-2">
                 <label for="full-name" class="form-label">Numele si prenumele</label>
-                <input type="text" name="name" class="form-control" id="full-name" placeholder="Ex: Alexandrina Jardan"
+                <input type="text" name="nume" class="form-control" id="full-name" placeholder="Ex: Alexandrina Jardan"
                   required="">
               </div>
               <div class="mb-2">
                 <label for="phone-number" class="form-label">Numar de telefon</label>
-                <input type="tel" name="name" class="form-control" id="full-name" placeholder="Ex: 060 000 000"
+                <input type="tel" name="telefon" class="form-control" id="full-name" placeholder="Ex: 060000000"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{3}" max-length="9" required>
               </div>
               <div class="mb-5">
-                <label class="form-label">Cantitate</label>
-                <select class="form-select" aria-label="Default select example">
+                <label for="cantitate" class="form-label">Cantitate</label>
+                <select name="cantitate" class="form-select" id="cantitate" aria-label="Default select example"
+                  required>
                   <option selected="">Alege cantitatea</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -422,17 +425,18 @@
             <fieldset id="fs-frm-inputs">
               <div class="mb-2">
                 <label for="full-name" class="form-label">Numele si prenumele</label>
-                <input type="text" name="name" class="form-control" id="full-name" placeholder="Ex: Alexandrina Jardan"
+                <input type="text" name="nume" class="form-control" id="full-name" placeholder="Ex: Alexandrina Jardan"
                   required="">
               </div>
               <div class="mb-2">
                 <label for="phone-number" class="form-label">Numar de telefon</label>
-                <input type="tel" name="name" class="form-control" id="full-name" placeholder="Ex: 060 000 000"
+                <input type="tel" name="telefon" class="form-control" id="full-name" placeholder="Ex: 060000000"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{3}" max-length="9" required>
               </div>
               <div class="mb-5">
-                <label class="form-label">Cantitate</label>
-                <select class="form-select" aria-label="Default select example">
+                <label for="cantitate" class="form-label">Cantitate</label>
+                <select name="cantitate" class="form-select" id="cantitate" aria-label="Default select example"
+                  required>
                   <option selected="">Alege cantitatea</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
