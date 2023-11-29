@@ -4,47 +4,459 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  
   <!-- Favicon -->
   <!-- <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" /> -->
-
+  
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-
+  
   <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/index.bundle.css" />
-
+  
   <!-- Title -->
-  <title>Curînd..</title>
-</head>
+  <title>Planco</title></head>
 
 <body>
 
-  <!-- header -->
-  <section class="overflow-hidden inverted bg-black">
-    <div class="d-flex flex-column min-vh-100 container py-10 level-1">
-      <div class="row text-center">
-        <div class="col">
-          <a href="index.html"><img src="./assets/images/logo/logo-light.svg" alt="Logo" class="logo logo-sm"></a>
-        </div>
+
+  <!-- navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-dark">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a>
+  
+      <!-- secondary -->
+      <ul class="navbar-nav navbar-nav-secondary order-lg-3">
+        <li class="nav-item d-lg-none">
+          <a data-scroll href="#contact" class="btn btn-outline-white rounded-pill ms-2">
+            Comandă
+          </a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a data-scroll href="#contact" class="btn btn-outline-white rounded-pill ms-2">
+            Comandă
+          </a>
+        </li>
+      </ul>
+  
+      <!-- primary -->
+      <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
+        <ul class="navbar-nav">
+          <!-- <li class="nav-item">
+            <a data-scroll href="#contact" class="nav-link" href="#">
+              Landings
+            </a>
+          </li> -->
+          <li class="nav-item d-lg-none">
+            <a data-scroll href="#contact" class="nav-link text-primary">Comandă</a>
+          </li>
+        </ul>
       </div>
+  
+  
+    </div>
+  </nav>
+
+
+  <!-- hero -->
+  <section class="cover overflow-hidden bg-black inverted">
+    <div class="d-flex flex-column py-20 min-vh-100 container foreground">
       <div class="row justify-content-center my-auto">
-        <div class="col-lg-8 col-xl-6 text-center">
-          <div class="countdown countdown-decorated" data-countdown="Nov 23, 2023 20:00:00"></div>
+        <div class="col-md-8 text-center">
+          <h1 class="fw-bold display-1">“Rutina mea”<br />
+            Plannere pentru copii</h1>
         </div>
       </div>
     </div>
-    <div class="background background-overlay" data-aos="zoom-out" data-aos-delay="200">
-      <video data-video playsinline autoplay muted loop>
+    <div class="background background-overlay text-black" data-aos="zoom-out" data-aos-delay="200">
+      <video playsinline autoplay muted loop data-video>
         <source src="./assets/video/planco.mp4" type="video/mp4" />
       </video>
+    </div>
+    <span class="scroll-down"></span>
+  </section>
+
+
+  <!-- video -->
+  <section class="py-10 py-xl-15 position-relative overflow-hidden bg-light">
+    <div class="container level-3">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 text-center mb-5">
+          <h2 class="mb-1">Hai să vedem ce are în interior</h2>
+          <p>(plannerele diferă în funcție de vîrstă)</p>
+        </div>
+      </div>
+      <div class="row g-5 gallery-1">
+        <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up">
+          <figure class="media media-image equal-md-9-16"
+            data-bp='{"imgSrc": "./assets/images/planer.jpg" , "parentGalleryClass": "gallery-1" }'>
+            <span style="background-image: url('./assets/images/planer.jpg')">
+            </span>
+          </figure>
+          <h4 class="fs-5 mt-4">Planner</h4>
+          <p class="text-secondary mx-2">Plannerul este lunar, fiecare pagină are o listă de pictograme a programului
+            copiilor, ceea ce le oferă posibilitatea de a vizualiza activitățile lor zilnice.</p>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="100">
+          <figure class="media media-image equal-md-9-16"
+            data-bp='{"imgSrc": "./assets/images/stickere.jpg" , "parentGalleryClass": "gallery-1" }'>
+            <span style="background-image: url('./assets/images/stickere.jpg')">
+            </span>
+          </figure>
+          <h4 class="fs-5 mt-4">Stickere</h4>
+          <p class="text-secondary mx-2">Pentru o doză de distracție, plannerul se completează cu ajutorul stickerelor.
+            Cu trei tipuri de autocolante, copiii își pot crea rutina lor așa cum o doresc. </p>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="200">
+          <figure class="media media-image equal-md-9-16"
+            data-bp='{"imgSrc": "./assets/images/ghid.jpg" , "parentGalleryClass": "gallery-1" }'>
+            <span style="background-image: url('./assets/images/ghid.jpg')">
+            </span>
+          </figure>
+          <h4 class="fs-5 mt-4">Ghid pentru părinți</h4>
+          <p class="text-secondary mx-2">Plannerul conține și un ghid special creat de Alexandrina Jardan și Adriana
+            Boroș, consilieră educațională și parentală, pentru a oferi părinților sfaturi și tehnici prețioase de
+            comunicare pozitivă și necondiționată cu copiii.</p>
+        </div>
+      </div>
+    </div>
+    <figure class="background">
+      <img class="position-absolute top-50 start-50 translate-middle" src="./assets/images/svg/clouds.svg" alt="Image">
+    </figure>
+  </section>
+
+
+
+  <!-- products -->
+  <section class="py-10 py-xl-15" id="contact">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 text-center mb-5">
+          <h2>Planerele noastre</h2>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-lg-5 text-center">
+          <div class="carousel mb-1">
+            <div data-carousel='{"mouseDrag": true, "gutter": 40, "loop": true, "items": 1, "nav": false}'>
+              <div>
+                <figure class="equal-1-1" style="background-image: url('./assets/images/product-1-1.jpg')">
+                </figure>
+              </div>
+
+              <div>
+                <figure class="equal-1-1" style="background-image: url('./assets/images/product-1-2.jpg')">
+                </figure>
+              </div>
+
+              <div>
+                <figure class="equal-1-1" style="background-image: url('./assets/images/product-1-3.jpg')">
+                </figure>
+              </div>
+
+              <div>
+                <figure class="equal-1-1" style="background-image: url('./assets/images/product-1-4.jpg')">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h2 class="fw-bold mb-0">Rutina mea 2+</h2>
+          <span class="text-primary fs-5">395mdl</span>
+          <p class="py-2 text-gray">Transformați rutina zilnică într-o aventură distractivă și educativă. Planificatorul
+            "Rutina mea" ajută copiii de mici să-și organizeze sarcinile și responsabilitățile pe care le au și le oferă
+            o vedere în ansamblu asupra programului lor. Copiii completează cu ușurință planificatorul cu ajutorul
+            stickerelor, ceea ce contribuie la creșterea autonomiei copilului și reduce stresul părinților asociat cu
+            convingerea și negocierea de a-și îndeplini sarcinile zilnice.</p>
+          <a data-scroll href="#" class="btn btn-primary text-white rounded-pill" data-bs-toggle="modal"
+            data-bs-target="#modal-1">Comandă</a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="carousel mb-1">
+            <div data-carousel='{"mouseDrag": true, "gutter": 40, "loop": true, "items": 1, "nav": false}'>
+              <div>
+                <figure class="equal-1-1" style="background-image: url('./assets/images/product-2-1.jpg')">
+                </figure>
+              </div>
+
+              <div>
+                <figure class="equal-1-1" style="background-image: url('./assets/images/product-2-2.jpg')">
+                </figure>
+              </div>
+
+              <div>
+                <figure class="equal-1-1" style="background-image: url('./assets/images/product-2-3.jpg')">
+                </figure>
+              </div>
+
+              <div>
+                <figure class="equal-1-1" style="background-image: url('./assets/images/product-2-4.jpg')">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h2 class="fw-bold mb-0">Rutina mea 5+</h2>
+          <span class="text-primary fs-5">395mdl</span>
+          <p class="py-2 text-gray">Planificatorul ”Rutina mea” ajută părinții să mânuiască mai puțin dificil
+            obstacolele primilor ani din viața copiilor, fiind primul planificator potrivit momentului când copilul
+            începe să devină autonom. Excelent pentru a-i învăța pe cei mici abilitățile de organizare, responsabilitate
+            și gestionarea timpului. Planificatorul pentru copiii 5+ este potrivit pentru acei copii care deja merg la
+            grădiniță/școală, activitățile lor deosebindu-se de cele din plannerul 2+</p>
+          <a data-scroll href="#" class="btn btn-primary text-white rounded-pill" data-bs-toggle="modal"
+            data-bs-target="#modal-2">Comandă</a>
+        </div>
+      </div>
     </div>
   </section>
 
 
+  <!-- faq -->
+  <section class="py-10 py-xl-15 border-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mb-6 mb-lg-0">
+          <div class="accordion accordion-minimal accordion-highlight" id="accordion-1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1-1">
+                <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
+                  Pot fi cumpărate atât pentru fetițe, сît și pentru băieței?
+                </button>
+              </h2>
+              <div id="collapse-1-1" class="accordion-collapse collapse" aria-labelledby="heading-1-1"
+                data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                  <p class="text-secondary">
+                    ”Rutina mea” este un planner creat pentru copii. Fie că aveți o fetiță sau un băiețel planificatorul
+                    va fi o metodă eficientă și jucăușă pentru ei ca să deprindă abilități de organizare și gestionare a
+                    timpului. Rolul lui este să ajute copiii să-și organizeze sarcinile, activitățile și
+                    responsabilitățile zilnice pe care le au.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1-2">
+                <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
+                  În câte zile ajunge comanda făcută de pe site?
+                </button>
+              </h2>
+              <div id="collapse-1-2" class="accordion-collapse collapse" aria-labelledby="heading-1-2"
+                data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                  <p class="text-secondary">
+                    Termenul de livrare pentru comenzile făcute de pe site sunt 2-4 zile, în funcție de când este făcută
+                    comanda.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1-3">
+                <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
+                  Livrarea se face doar pe teritoriul Republicii Moldova?
+                </button>
+              </h2>
+              <div id="collapse-1-3" class="accordion-collapse collapse" aria-labelledby="heading-1-3"
+                data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                  <p class="text-secondary">
+                    Ne dorim mult ca plannerul ”Rutina mea” să ajungă la toți copiii indiferent de locul unde se află.
+                    De aceea, asigurăm livrarea produsului și înafara țării Republicii Moldova. Termenul de livrare
+                    pentru aceste comenzi sunt de 5-7 zile.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="rounded overflow-hidden">
+            <img src="./assets/images/about.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- contact -->
+  <section class="py-20 mx-xl-3 overflow-hidden bg-blue inverted rounded-4">
+    <div class="container foreground">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-6">
+          <h2 class="mb-1">Ai o intrebare?</h2>
+          <p class="lead">Lasă-ne datele de contact, iar noi revenim cu un apel</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/myyqqbge"
+            method="post">
+            <fieldset id="fs-frm-inputs">
+              <div class="mb-2">
+                <label for="full-name" class="form-label">Numele si prenumele</label>
+                <input type="text" name="Numele" class="form-control" id="full-name"
+                  placeholder="Ex: Alexandrina Jardan" required="">
+              </div>
+              <div class="mb-5">
+                <label for="phone-number" class="form-label">Numar de telefon</label>
+                <input type="tel" name="Telefon" class="form-control" id="full-name" placeholder="Ex: 060000000"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{3}" max-length="9" required>
+              </div>
+            </fieldset>
+            <input type="submit" class="btn btn-white btn-rounded-pill" value="Trimite">
+          </form>
+        </div>
+      </div>
+    </div>
+    <img class="position-absolute top-0 start-25 translate-middle" src="./assets/images/svg/clouds.svg" alt="Image">
+  </section>
+
+
+  <!-- logo list -->
+  <section class="py-10 py-xl-15 border-bottom">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="mb-1">Mai poți găsi produsele noastre aici</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="carousel carousel-align text-center">
+            <div
+              data-carousel='{"gutter": 48, "loop": false, "nav": false, "controls": false, "responsive": {"0": {"items": 2}, "768": {"items": 3}, "1200": {"items": 3}}}'>
+              <div>
+                <img src="./assets/images/logo/partener-1.png" alt="Cartego" class="logo">
+              </div>
+              <div>
+                <img src="./assets/images/logo/partener-2.png" alt="Carturesti" class="logo">
+              </div>
+              <div>
+                <img src="./assets/images/logo/partener-3.png" alt="Librarius" class="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="py-15 py-xl-20">
+    <div class="container">
+      <div class="row g-2 g-lg-6 mb-8">
+        <div class="col-lg-6">
+          <p>Toate imaginile și textele pe
+            www.planco.art sunt proprietate intelectuală a Plancoart S.R.L și sunt protejate de legea
+            internațională pentru drepturi de autor.</p>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <span class="h5">+373 69 817 839</span>
+        </div>
+      </div>
+      <div class="row g-0 g-lg-6 text-secondary">
+        <div class="col-lg-6 text-lg-end order-lg-2">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.instagram.com/plancoart/" class="text-reset">Instagram</a>
+            </li>
+            <li class="list-inline-item ms-1"><a href="https://www.facebook.com/profile.php?id=61553716295068"
+                class="text-reset">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <p>Toate drepturile rezervate &copy; 2023</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- modal 1 -->
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="bi bi-x modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body p-8">
+          <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xaygzrll"
+            method="post">
+            <fieldset id="fs-frm-inputs">
+              <div class="mb-2">
+                <label for="full-name" class="form-label">Numele si prenumele</label>
+                <input type="text" name="nume" class="form-control" id="full-name" placeholder="Ex: Alexandrina Jardan"
+                  required="">
+              </div>
+              <div class="mb-2">
+                <label for="phone-number" class="form-label">Numar de telefon</label>
+                <input type="tel" name="telefon" class="form-control" id="full-name" placeholder="Ex: 060000000"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{3}" max-length="9" required>
+              </div>
+              <div class="mb-5">
+                <label for="cantitate" class="form-label">Cantitate</label>
+                <select name="cantitate" class="form-select" id="cantitate" aria-label="Default select example"
+                  required>
+                  <option selected="">Alege cantitatea</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </fieldset>
+            <input type="submit" class="btn btn-primary btn-rounded-pill text-white btn-block w-100" value="Trimite">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 2 -->
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="bi bi-x modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body p-8">
+          <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xpzggrbo"
+            method="post">
+            <fieldset id="fs-frm-inputs">
+              <div class="mb-2">
+                <label for="full-name" class="form-label">Numele si prenumele</label>
+                <input type="text" name="nume" class="form-control" id="full-name" placeholder="Ex: Alexandrina Jardan"
+                  required="">
+              </div>
+              <div class="mb-2">
+                <label for="phone-number" class="form-label">Numar de telefon</label>
+                <input type="tel" name="telefon" class="form-control" id="full-name" placeholder="Ex: 060000000"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{3}" max-length="9" required>
+              </div>
+              <div class="mb-5">
+                <label for="cantitate" class="form-label">Cantitate</label>
+                <select name="cantitate" class="form-select" id="cantitate" aria-label="Default select example"
+                  required>
+                  <option selected="">Alege cantitatea</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </fieldset>
+            <input type="submit" class="btn btn-primary btn-rounded-pill text-white btn-block w-100" value="Trimite">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- javascript -->
   <script src="./assets/js/vendor.bundle.js"></script>
-  <script src="./assets/js/index.bundle.js"></script>
-</body>
+  <script src="./assets/js/index.bundle.js"></script></body>
 
 </html>
